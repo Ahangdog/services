@@ -5,7 +5,7 @@ sudo a2enmod dav
 sudo a2enmod dav_fs
 sudo mkdir -p /var/www/webdav
 sudo chown -R www-data:www-data  /var/www/webdav
-sudo htpasswd -c /etc/apache2/webdav.password pi
+sudo htpasswd -c /etc/apache2/webdav.password fate
 sudo chown root:www-data /etc/apache2/webdav.password
 sudo chmod 640 /etc/apache2/webdav.password
 echo "Alias /webdav  /var/www/webdav" > /etc/apache2/sites-available/000-default.conf
